@@ -10,7 +10,7 @@ import kotlin.test.assertEquals
 class MyGreeterTest {
 
     companion object {
-        // 提供测试数据
+        // 测试数据
         @JvmStatic
         fun provideTestData(): List<Arguments> {
             return listOf(
@@ -24,7 +24,7 @@ class MyGreeterTest {
         }
     }
 
-    // 参数化测试方法
+    // 测试方法
     @ParameterizedTest
     @MethodSource("provideTestData")
     @DisplayName("测试不同时间的问候语")
